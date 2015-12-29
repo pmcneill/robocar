@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Robot Car</title>
+    <link href="//patrickmcneill.com/css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="body">
+      <h1>Robot Car Instructions</h1>
+
+      <p>
+        Turn on the robot car by pressing the white power button on the top.
+        This will make it try to join your wireless network and then begin
+        listening for commands.
+      </p>
+
+      <p>
+        If it's the first time with the car, you'll need to give it your
+        network password.  Look for an "IoT Device" wireless network and 
+        join it.  Go to <a href="http://192.168.4.1/">http://192.168.4.1/</a>
+        and enter your network name (SSID) and password.  Leave the "extra
+        configuration" link blank.  It can only join 2.4ghz networks, so if
+        you have two networks, make sure to pick the right now.  Once you
+        see the "thanks" message, turn the car off and back on.
+      </p>
+
+      <p>
+        A few moments after starting up the car, go to
+        <a href="http://patrickmcneill.com/car/">http://patrickmcneill.com/car/</a>.
+        It will try to find your car on the network.  If it does, you'll see a
+        set of buttons you can use to control it.  If not, try waiting longer and
+        then reloading the page, or if that fails, re-running the setup.
+      </p>
+
+      <p>
+        If you're feeling brave, all of the code for the car is available at
+        <a href="https://github.com/pmcneill/robocar">https://github.com/pmcneill/robocar</a>.
+        If you make any changes to the control panel, for instance, you can send me
+        a "pull request" and I can incorporate them into the live site.
+      </p>
+    </div>
+
+    <img src="car.jpg" style="width: 100vw;">
+
+    <div class="body">
+      <p>
+        There are three extra pieces for the car: a set of lights and two
+        bumpers.  The lights should be plugged into pin 5 on the main board,
+        with the black wire closest to the edge.  The bumpers should be
+        connected to pins 6 and 7 (their orientation isn't important).  Here's
+        what that should look like:
+      </p>
+    </div>
+
+    <img src="sensors.jpg" style="width: 100vw;">
+
+    <div class="body">
+      <p>
+        The screw terminals on the end of the controller board are where the motors
+        and batteries are connected.  The battery power should be connected to the
+        "V IN" (red wire) and "GND" (black) terminals.  The motors are connected
+        to the "A+", "A-", "B+", and "B-" terminals.  The +/- on the motors is
+        actually unimportant.  If you connect the wires and the car seems to go
+        backwards, just swap the red and black wires to the other terminals.
+      </p>
+
+      <p>
+        I've included a battery box for 5 AA batteries.  It'd probably be a good idea
+        to use rechargable batteries -- I'm not really sure how long the batteries will
+        last.  The other possibility is to use an iPad/tablet external battery (not 
+        just a phone battery, though -- the tablet batteries generally provide more
+        current).  Cut a USB cable in half, then you should find red and black wires
+        on the inside.
+      </p>
+    </div>
+
+    <img src="power.jpg" style="width: 100vw;">
+  </body>
+</html>
