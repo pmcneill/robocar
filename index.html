@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="car.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="car.js"></script>
+  </head>
+  <body>
+    <div id="connecting">
+      Looking for car...
+    </div>
+
+    <div id="controls" class="hidden">
+      <div id="forward" class="control">Forward</div>
+      <div id="left" class="control">Left</div>
+      <div id="right" class="control">Right</div>
+      <div id="reverse" class="control">Reverse</div>
+      <div id="stop" class="control">Stop</div>
+
+      <div>Lights:
+        <select id="lights" class="control">
+          <option value="_000">Off</option>
+          <option value="red_blue">Police</option>
+          <option value="red_moving">Knight Rider</option>
+          <option value="cycle_rainbow">Cycle Rainbow</option>
+          <option value="all_rainbow">All Rainbow</option>
+          <option value="_f00">All Red</option>
+          <option value="_0f0">All Green</option>
+          <option value="_00f">All Blue</option>
+          <option value="_fff">All White</option>
+          <option value="_ff0">All Yellow</option>
+          <option value="_80f">All Purple</option>
+          <option value="_f80">All Orange</option>
+        </select>
+      </div>
+
+      <div id="mode" class="control">Mode:<br><span id="mode_label">Manual</span></div>
+    </div>
+
+    <div id="failed" class="hidden">
+      The robot car could not be found on your network.  Try turning it off and then
+      back on to register its address, then reloading this page.  If that fails,
+      check that it's set up properly.  Look for a wifi network called "IoT Device".
+      If you find it, join the network then go to
+      <a href="http://192.168.4.1/">http://192.168.4.1/</a>.  Enter your wifi network
+      name and password, then restart the car.
+    </div>
+  </body>
+</html>

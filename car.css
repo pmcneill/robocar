@@ -1,0 +1,45 @@
+body {
+    font-family: Verdana, Arial, Verdana, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#controls div {
+    display: block;
+    height: 1.5em;
+    width: 8em;
+    text-align: center;
+    border: 1px solid black;
+    margin: 2em 12em;
+    padding: 2em;
+    font-weight: bold;
+}
+
+.control#right {
+    float: left;
+    margin-left: 2em;
+}
+
+.control#left {
+    float: left;
+    margin-left: 4em;
+    margin-right: 2em;
+}
+
+.control#reverse {
+    clear: both;
+}
+
+.control#forward{
+    color: green;
+    margin-bottom: 0em;
+}
+
+.control#stop {
+    color: red;
+}
