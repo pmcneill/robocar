@@ -8,6 +8,24 @@ and then register its local IP address.  Anyone on that same wireless
 network can visit the [car remote control page](http://patrickmcneill/car/)
 to give it commands.
 
+## Set up
+
+Before you connect the car to your computer, you need to install a few programs.
+First, install the driver for it, from
+[https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx](https://www.silabs.com/products/mcu/Pages/USBtoUARTBridgeVCPDrivers.aspx).  Next, install the
+[Arduino software](https://www.arduino.cc/en/Main/Software).  Open up
+the Arduino environment.  Go to the Preferences window and add
+"http://arduino.esp8266.com/stable/package_esp8266com_index.json" under "Additional
+Boards Manager URLs".  Open the board manager from Tools => Board and choose ESP8266.  Finally,
+go back to the Boards menu again and choose "Generic ESP8266 Module".
+
+Now, to reprogram the car, or to diagnose a problem, pull the wifi chip (about 1"x2")
+off the board and connect it to your computer with a micro USB cable.  Under the tools 
+menu, set the flash size to "4MB (3MB Spiffs)" and upload speed to 115200.  On a Mac,
+choose /dev/cu.SLAB_USBtoUART for the port.  Finally, start up the "Serial Monitor" and
+make sure it too is set to 115200.  Hit the RST (reset) button on the wifi chip and you
+should start to see debugging output on the screen.
+
 ## Control Software
 
 The Arduino software is in the "arduino" directory of this repository.
